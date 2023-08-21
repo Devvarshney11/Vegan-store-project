@@ -126,7 +126,6 @@ nav {
     text-align: center;
     box-sizing: border-box;
     padding: 112px 48px;
-    /* display: flex; */
 }
 
 @media (max-width:760px) {
@@ -247,4 +246,60 @@ nav {
 
 .iconwrapper i {
     font-size: 60px;
+}
+.shopsection
+{
+    width:100%;
+    text-align: center;
+    padding-top:75px;
+    padding-bottom:75px;
+}
+.shopsection h3
+{
+    font-size: 55px;
+    font-weight: 600;
+    margin: 0;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.testomonial
+{
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    margin:0 auto;
+    align-items: center;
+}
+.testomonialcard
+{
+    width:25%;
+    padding: 40px 30px;
+    margin:16px;
+    text-align: center;
+    background-color: #f5f6fb;
+    border-radius: 45px 0 45px 45px;
+}
+.testomonialimage
+{
+    width:100px;
+    border-radius: 50%;
+    margin-bottom: 25px;
+}
+
+.testomonialdesc
+{
+    font-size: 18px;
+    color:#8b8b99;
+    font-style: italic;
+    letter-spacing: 0.5px;
+    margin:5px;
+}
+.testomonialauthor
+{
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 24px;
+    margin-bottom: 0px;
 }
