@@ -128,21 +128,6 @@ nav {
     padding: 112px 48px;
 }
 
-@media (max-width:760px) {
-    .stepsection {
-        flex-direction: column;
-    }
-
-    header {
-        padding: 0;
-    }
-
-    .step-item {
-        padding: 112px 36px;
-        width: 100%;
-    }
-}
-
 .step-item i {
     font-size: 96px;
     transition: all 0.3s;
@@ -554,4 +539,218 @@ footer {
     letter-spacing: 0.5px;
     text-align: center;
     padding: 30px 0px;
+}
+
+@media (max-width:900px) {
+    .menu-items {
+        display: none;
+    }
+
+    .maintextwrapper h3 {
+        font-size: 24px;
+    }
+
+    .maintextwrapper p {
+        font-size: 12px;
+    }
+
+    .step-item i {
+        font-size: 70px;
+    }
+
+    .step-item h3 {
+        font-size: 28px;
+    }
+
+    .step-item p {
+        font-size: 12px;
+
+    }
+
+    .stepsection {
+        flex-direction: column;
+    }
+
+    header {
+        padding: 0;
+    }
+
+    .step-item {
+        box-sizing: border-box;
+        padding: 112px 36px;
+        width: 100%;
+    }
+
+    .storewrapper {
+        flex-direction: column;
+    }
+
+    .store {
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .testomonial {
+        flex-direction: column;
+    }
+
+    .testomonialcard {
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .followusection {
+        flex-direction: column;
+    }
+
+    .leftsection {
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .rightsection {
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .statwrapper {
+        flex-direction: column;
+        padding:12px 0;
+    }
+
+    .stats {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 12px 0;
+    }
+
+    .adresswrapper {
+        flex-direction: column;
+    }
+
+    .adresswrapper>div {
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+        margin-bottom: 48px;
+    }
+    .freshfoodheading
+    {
+        font-size: 20px;
+        padding-top:18px;
+    }
+    .storesection h3 
+    {
+        font-size:24px;   
+    }
+    .storedesc
+    {
+        font-size: 12px;
+        margin-bottom:35px;
+    }
+    .iconwrapper
+    {
+        padding:30px;
+    }
+    .iconwrapper i 
+    {
+        font-size: 40px;
+    }
+    .store p
+    {
+        font-size: 12px;
+        margin:0;
+    }
+    .shopsection h3 
+    {
+        font-size: 24px;
+    }
+    .textwrapper h3 
+    {
+        font-size: 24px;
+    }
+    .textwrapper p 
+    {
+        font-size: 12px;
+    }
+    .textwrapper {
+        margin: 24px;
+    }
+    .stats h3 
+    {
+        font-size: 30px;
+    }
+    .stats p
+    {
+        font-size: 12px;
+    }
+    .videosection h3 {
+        font-size: 30px;
+        margin: 30px 0;
+    }
+    .green-heading
+    {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+    .section-heading
+    {
+        font-size: 24px;
+    }
+    .section-description
+    {
+        font-size: 12px;
+    }
+    .address-heading
+    {
+        font-size: 18px;
+    }
+    .address-lines
+    {
+        font-size: 12px;
+        line-height: 1.6;
+    }
+    .adresswrapper div:last-of-type {
+        width: 100%;
+    }
+    .input-box
+    {
+        font-size: 12px;
+        padding:12px;
+    }
+    .primary-button
+    {
+        font-size: 12px;
+        padding:9px 24px;
+        font-weight: 500;
+    }
+}
+
+@media (max-width:1500px)
+{
+    .textwrapper h3 
+    {
+        font-size: 24px;
+    }
+    .textwrapper p 
+    {
+        font-size: 12px;
+    }
+    .textwrapper {
+        margin: 24px;
+    }
+    .subscribeemail
+    {
+        width:70%;
+        font-size: 12px;
+        padding:12px;
+        display: inline-block;
+    }
+    .subscribebutton
+    {
+        padding: 12px 24px;
+        font-size: 12px;
+        font-weight: 550;
+        display: inline-block;
+    }
 }
