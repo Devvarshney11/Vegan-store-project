@@ -18,7 +18,7 @@ header {
 nav {
     background-color: white;
     width: 100%;
-    height: 100px;
+    height: 77px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,7 +43,7 @@ nav {
 }
 
 .menu-items {
-    font-size: 18px;
+    font-size: 14px;
     color: black;
     font-weight: 600;
     margin-right: 24px;
@@ -74,8 +74,9 @@ nav {
     border: none;
     border-radius: 4px;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 12px;
     color: white;
+    cursor: pointer;
 }
 
 .landingsection {
@@ -93,19 +94,18 @@ nav {
 }
 
 .maintextwrapper h3 {
-    font-size: 60px;
-
+    font-size: 44px;
     white-space: wrap;
     width: 100%;
     font-weight: 600;
-    letter-spacing: 10px;
+    letter-spacing: 8.8px;
     line-height: 1.2;
     text-align: center;
     margin: 0;
 }
 
 .maintextwrapper p {
-    font-size: 18px;
+    font-size: 14px;
     letter-spacing: 0.5px;
     font-weight: 400;
     color: #8b8b99;
@@ -132,19 +132,24 @@ nav {
     .stepsection {
         flex-direction: column;
     }
-    header
-    {
-        padding:0;
+
+    header {
+        padding: 0;
     }
-    .step-item
-    {
-        padding:112px 36px;
-        width:100%;
+
+    .step-item {
+        padding: 112px 36px;
+        width: 100%;
     }
 }
 
 .step-item i {
     font-size: 96px;
+    transition: all 0.3s;
+}
+
+.step-item:hover i {
+    transform: scale(1.1, 1.1);
 }
 
 .step-item p {
@@ -184,14 +189,14 @@ nav {
 
 .freshfoodheading {
     color: #91ac41;
-    font-size: 44px;
+    font-size: 24px;
     font-family: 'Caveat', cursive;
     margin: 0;
     padding-top: 75px;
 }
 
 .storesection h3 {
-    font-size: 55px;
+    font-size: 44px;
     font-weight: 600;
     margin: 0;
     margin-top: 12px;
@@ -199,7 +204,7 @@ nav {
 }
 
 .storedesc {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
     color: #8b8b99;
     letter-spacing: 0.5px;
@@ -224,14 +229,15 @@ nav {
 
 .store h3 {
     font-weight: 600;
-    font-size: 28px;
+    font-size: 24px;
     margin-top: 18px;
     margin-bottom: 24px;
 }
 
 .store p {
-    font-size: 18px;
+    font-size: 16px;
     letter-spacing: 0.5px;
+    font-weight: 500;
     line-height: 1.6;
     color: #8b8b99;
 }
@@ -240,66 +246,312 @@ nav {
     display: inline-block;
     background-color: #e3b375;
     border-radius: 50%;
-    padding: 60px;
+    padding: 40px;
     color: white;
+    transition: all 0.3s;
+}
+
+.store:hover .iconwrapper {
+    transform: scale(1.1, 1.1);
 }
 
 .iconwrapper i {
     font-size: 60px;
 }
-.shopsection
-{
-    width:100%;
+
+.shopsection {
+    width: 100%;
     text-align: center;
-    padding-top:75px;
-    padding-bottom:75px;
+    padding-top: 75px;
+    padding-bottom: 75px;
 }
-.shopsection h3
-{
-    font-size: 55px;
+
+.shopsection h3 {
+    font-size: 44px;
     font-weight: 600;
     margin: 0;
     margin-top: 12px;
     margin-bottom: 12px;
 }
-.testomonial
-{
-    width:100%;
-    display:flex;
+
+.testomonial {
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
     flex-direction: row;
-    justify-content: center;
-    margin:0 auto;
+    margin: 0 auto;
     align-items: center;
 }
-.testomonialcard
-{
-    width:25%;
+
+.testomonialcard {
+    width: 25%;
     padding: 40px 30px;
-    margin:16px;
+    margin: 16px;
     text-align: center;
     background-color: #f5f6fb;
     border-radius: 45px 0 45px 45px;
+    transition: boxshadow 0.3s;
 }
-.testomonialimage
-{
-    width:100px;
+
+.testomonialcard:hover {
+    box-shadow: 0 12px 16px 0 rgba(39, 39, 47, 0.06);
+}
+
+.testomonialimage {
+    width: 100px;
     border-radius: 50%;
     margin-bottom: 25px;
 }
 
-.testomonialdesc
-{
-    font-size: 18px;
-    color:#8b8b99;
+.testomonialdesc {
+    font-size: 14px;
+    color: #8b8b99;
     font-style: italic;
     letter-spacing: 0.5px;
-    margin:5px;
+    margin: 0;
 }
-.testomonialauthor
-{
+
+.testomonialauthor {
     text-transform: uppercase;
     font-size: 16px;
     font-weight: 600;
     margin-top: 24px;
     margin-bottom: 0px;
+}
+
+.followusection {
+    display: flex;
+    justify-content: stretch;
+    width: 100%;
+}
+
+.leftsection {
+    width: 67%;
+    display: inline-block;
+    margin: 0;
+}
+
+.leftsection img {
+    width: 100%;
+}
+
+.rightsection {
+    width: 33%;
+    display: inline-block;
+    background: url("https://edyoda.s3.ap-south-1.amazonaws.com/public/strawberry-white.png");
+    background-size: cover;
+    background-position: left;
+    margin: 0;
+}
+
+.textwrapper {
+    margin: 115px;
+}
+
+.textwrapper h3 {
+    font-size: 44px;
+    font-weight: 600;
+    margin: 0 0 8px;
+}
+
+.textwrapper p {
+    color: #8b8b99;
+    font-size: 16px;
+    letter-spacing: 0.5;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.subscribeemail {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #e5e6ec;
+    border-radius: 4px;
+    font-weight: 500;
+    background-color: white;
+    padding: 12px;
+    color: #8b8b99;
+    font-size: 16px;
+    margin-top: 60px;
+    display: block;
+}
+
+.subscribeemail:focus {
+    outline: none;
+}
+
+.subscribebutton {
+    background-color: #f69dad;
+    margin-top: 16px;
+    padding: 16px 42px;
+    border-radius: 4px;
+    border: 0;
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.subscribebutton:hover {
+    border: 1px solid #f69dad;
+    background-color: white;
+    color: #f69dad;
+}
+
+.statssection {
+    background-color: #f6fcfa;
+    width: 100%;
+}
+
+.statwrapper {
+    width: 100%;
+    max-width: 1300px;
+    padding: 100px 0;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: stretch;
+}
+
+.stats {
+    width: 25%;
+    padding: 0 64px;
+}
+
+.stats h3 {
+    font-size: 44px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.stats p {
+    color: #57e3b5;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    font-style: italic;
+    margin: 0;
+}
+
+.videosection h3 {
+    font-size: 44px;
+    font-weight: 400;
+    margin: 44px 0;
+    color: #8b8b99;
+}
+
+.videosection>div {
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1300px;
+}
+
+.lineseparator {
+    width: 96px;
+    display: inline-block;
+    height: 2px;
+    background-color: #e4b476;
+    margin-bottom: 36px;
+}
+
+.videosection iframe {
+    width: 100%;
+    height: 425px;
+    border: none;
+}
+
+.adresswrapper {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 0;
+}
+
+.green-heading {
+    color: #91ac41;
+    font-size: 24px;
+    font-family: 'Caveat', cursive;
+    margin: 0;
+    margin-top: 35px;
+}
+
+.section-heading {
+    font-size: 600;
+    font-size: 44px;
+    margin: 0;
+}
+
+.section-description {
+    font-size: 16px;
+    font-weight: 400;
+    color: #8b8b99;
+    letter-spacing: 0.5px;
+}
+
+.address-heading {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+    margin-top: 32px;
+}
+
+.address-lines {
+    font-size: 16px;
+    font-weight: 400;
+    color: #8b8b99;
+    letter-spacing: 0.5px;
+    line-height: 2;
+    margin: 0;
+}
+
+.input-box {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #e5e6ec;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    font-weight: 500;
+    background-color: white;
+    padding: 16px;
+    color: #8b8b99;
+    font-size: 16px;
+    display: block;
+}
+
+.input-box:focus {
+    outline: none;
+}
+
+.primary-button {
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(170, 210, 54);
+    padding: 9px 34px;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 4px;
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+.adresswrapper div {
+    width: 50%;
+}
+
+.adresswrapper div:last-of-type {
+    width: 40%;
+}
+
+footer {
+    background-color: #232323;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    padding: 30px 0px;
 }
